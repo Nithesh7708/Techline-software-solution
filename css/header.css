@@ -1,0 +1,21 @@
+:root{
+    --lightblack--:#bbbbbb;
+    --darkblack--:#000000;
+    --lightcolor--:#ff5f5f;
+    --darkcolor--:#940000;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header_bg{
+background-color: var(--darkcolor--);
+height: 90px;
+width: 100%;
+}
+.header_bg img{
+margin-top:-30px;
+border: none;
+  height: 160px;
+}
