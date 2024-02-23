@@ -5,6 +5,7 @@
     --darkcolor--:#940000;
     
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -19,3 +20,14 @@ margin-top:-30px;
 border: none;
   height: 160px;
 }
+
+
+
+/* moblile size align */
+@media  screen and (max-width:600px) {
+  .header_bg{
+    background-color: #000000;
+    }
+}
+
+/* ..............end....... */
