@@ -1,28 +1,134 @@
 :root{
-    --lightblack--:#bbbbbb;
-    --darkblack--:#000000;
-    --lightcolor--:#ff5f5f;
-    --darkcolor--:#940000;
-    
+  --primary-color:#ff3c00;
+  --primary-color:#fdfffc;
+    --darkblack--:#011627;
+    --lightcolor--:#41ead4;
+    --darkcolor--:#b91372;
+    --secondary-dark-color:#453c5c;
+    --white-color:#ffffff;
+    --light-bg-color:#f2f3f5;
+    --light-text-color:#7c899a;
+    --border-color:#e5e8ec;
+    --black:#000000;
+
+    --font-small:13px;
+    --font-smaller:11px;
+
+    --percent100:100%;
+    --percent50:50%;
+
+    --fw3:300;
+    --fw5:500;
+    --fw6:600;
+    --fw7:700;
+    --fw8:800;
+
+    --trans-background-color:background-color .3s, color .3s;
+    --trans-background:background-color .3s;
+    --trans-color:color .3s;
 }
 
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+i{
+  font-size: 22px;
+  padding-right: 7px;
 }
 .header_bg{
-background-color: var(--darkcolor--);
-height: 90px;
+  border-radius: 10px 40px  ;
+  background: rgb(186,0,44);
+  background: linear-gradient(90deg, rgba(186,0,44,1) 0%, rgba(208,0,119,1) 35%, rgba(133,0,189,1) 100%);
+height: 65px;
 width: 100%;
 }
-.header_bg img{
-margin-top:-30px;
-border: none;
-  height: 160px;
+#menu_bar_left .menu_right{
+  position: relative;
+  right: 60px;
+  top: 0px;
+  float: right;
 }
+.add_to_card{
+position: absolute;
+margin-top: -16px;
+left: 110px;
+background-color: #ffffff;
+border-radius: 50%;
+border: solid 2px white;
+color: #000000;
+}
+nav .left ul li{
 
+  align-items: center;
+  align-content: center;
+  height: auto;
+  color: #000000;
+  display:inline-block;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-weight: bold;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+nav .left ul li a{
+  color: white;
+  text-transform: uppercase;
+}
+.header_bg .left{
+  height: 65px;
+}
+nav ul li:hover{
+  background: #929292;
+}
+/* stall name and some animation */
+.stall_container{
+  display: grid;
+  place-items: center;
+}
+.stall_container h1{
+  border-right: 3px solid; 
+  width: 28ch;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  top: 40px;
+  font-size: 50px;
+  overflow: hidden;
+  animation: typing 3s steps(32), blink 0.5s step-end infinite alternate;
 
+}
+.stall_container h2{
+  border-right: 3px solid; 
+  width: 16.6ch;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  top: 40px;
+  font-size: 50px;
+  overflow: hidden;
+  animation: typing2 3s steps(18), blink 0.5s step-end infinite alternate;
 
+}
+@keyframes blink {
+  50%{
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from{
+    width: 0;
+  }
+}
+@keyframes typing2 {
+  from{
+    width: 0;
+  }
+}
 /* moblile size align */
 @media  screen and (max-width:600px) {
   .header_bg{
