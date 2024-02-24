@@ -40,17 +40,19 @@ i{
   padding-right: 7px;
 }
 .header_bg{
-  border-radius: 10px 40px  ;
+  border-radius: 10px 40px 300px ;
   background: rgb(186,0,44);
   background: linear-gradient(90deg, rgba(186,0,44,1) 0%, rgba(208,0,119,1) 35%, rgba(133,0,189,1) 100%);
 height: 65px;
 width: 100%;
+z-index: 1;
 }
 #menu_bar_left .menu_right{
   position: relative;
-  right: 60px;
+  right: 280px;
   top: 0px;
   float: right;
+  z-index: 1;
 }
 .add_to_card{
 position: absolute;
@@ -62,7 +64,7 @@ border: solid 2px white;
 color: #000000;
 }
 nav .left ul li{
-
+  z-index: 1;
   align-items: center;
   align-content: center;
   height: auto;
@@ -73,17 +75,19 @@ nav .left ul li{
   font-weight: bold;
   position: relative;
   top: 20px;
-  left: 30px;
+  left: 250px;
 }
 nav .left ul li a{
+  z-index: 1;
   color: white;
   text-transform: uppercase;
 }
 .header_bg .left{
   height: 65px;
+  z-index: 1;
 }
 nav ul li:hover{
-  background: #929292;
+  background: #000000;
 }
 /* stall name and some animation */
 .stall_container{
@@ -91,29 +95,21 @@ nav ul li:hover{
   place-items: center;
 }
 .stall_container h1{
+  z-index: 1;
   border-right: 3px solid; 
-  width: 28ch;
+  width: 40ch;
   white-space: nowrap;
   overflow: hidden;
   position: relative;
-  top: 40px;
+  top: 150px;
   font-size: 50px;
+  color: white;
+  text-shadow: 1px 3px 4px black;
   overflow: hidden;
-  animation: typing 3s steps(32), blink 0.5s step-end infinite alternate;
+  animation: typing 2.5s steps(32), blink 0.5s step-end infinite alternate;
 
 }
-.stall_container h2{
-  border-right: 3px solid; 
-  width: 16.6ch;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  top: 40px;
-  font-size: 50px;
-  overflow: hidden;
-  animation: typing2 3s steps(18), blink 0.5s step-end infinite alternate;
 
-}
 @keyframes blink {
   50%{
     border-color: transparent;
@@ -124,10 +120,16 @@ nav ul li:hover{
     width: 0;
   }
 }
-@keyframes typing2 {
-  from{
-    width: 0;
-  }
+/* stall background image */
+#stall_bg img{
+top: 0px;
+margin-top: -70px;
+left:0;
+position: absolute;
+ height: 60em;
+ width: 100%px;
+ z-index: -1;
+
 }
 /* moblile size align */
 @media  screen and (max-width:600px) {
