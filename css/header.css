@@ -114,6 +114,7 @@ i{
   }
 }
 /* hide laptop mode */
+
 .android_menu{
   display: none;
 }
@@ -186,7 +187,53 @@ i{
   outline: none;
   background-color: #ffffff;
 }  
+/* food catogary's */
+.catogary-top{
+  position: absolute;
+  top:12.6em;
+  font-size: 50px;
+  left: 60px;
+}
+.food_catogary{
+  margin-top: 4em;  
+  width: 100%;
+  height: 200px;
+}
 
+.catogary_img img{
+  filter: drop-shadow(1px -3px 6px black);
+  position: relative;
+  top: 60px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+  margin-left: 40px;
+}
+.catogary_img{ 
+  transition: all 0.4s;
+  opacity: 0.6;
+  position: relative;
+  left: 40px;
+  line-height: 60px;
+  display: inline-block;
+}
+.catogary_img a{
+  color:rgb(255, 0, 106);
+}
+.catogary_img:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+.catogary_img h2{
+  text-shadow: 1px 1px 1.7px rgb(255, 149, 149);
+  position: relative;
+  top: 30px;
+  text-align: center;
+  left: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 
 
@@ -196,6 +243,7 @@ i{
 
 /* moblie size assign */
 @media only screen  and (max-width:992px) {
+
   .container_menu{
     display: flex;
     align-items: center;
@@ -339,14 +387,27 @@ font-size: 15px;
 .buttom_menu ul a{
   color: white;
 }
+.buttom_menu_icon{
+  display: inline;
+  position: absolute;
+  top: 8px;
+  margin-top: -10px;
+  left: 38px;
+  font-size: 25px;
+}
 .buttom_menu ul li{
 font-size: 14px;
 position: relative;
 top:30px;
 left: 10px;
 display: inline;
-padding: 1.5ch;
+padding: 2.5ch;
 font-weight: bold;
+}
+.buttom_menu span{
+  position: relative;
+  left: 0px;
+  top: 10px;
 }
 /* search button section */
 .searbar .btn{
@@ -389,34 +450,55 @@ font-weight: bold;
   background-color: #ffffff;
 }  
 /* food catogary */
-.food{
-  padding: 10px;
-  width: 100%;
-  height: 140px;
-  white-space: nowrap;
-  overflow-y: scroll;
+ .catogary-top{
+  position: absolute;
+  top:230px;
+  font-size: 30px;
+  left: 20px;
 }
 .food_catogary{
-  box-shadow: 1px 1px 4px black;
-  padding-left: 10px;
-  background: #001aff;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
+  position: relative;
+  right: 60px;
+  width: 117%;
+  height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  white-space: nowrap;
+}
+.catogary_img img{
+
+  filter: drop-shadow(1px -3px 6px black);
+  position: relative;
+  top: 60px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+  margin-left: 40px;
+}
+.catogary_img{
+  margin-top: -40px;
+  opacity: 1;
+  margin-left: 0;
+  padding-left: 0;
+  transition: all 0.2s ;
   display: inline-block;
 }
-.food span{
-  z-index: 1;
-  position: relative;
-  top: 90px;
-  left: 8px;
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  font-weight: bold;
+.catogary_img:hover{
+  transform: none;
 }
-.food_section h1{
+.catogary_img a{
+  color:rgb(255, 0, 106);
+}
+.catogary_img h2{
+  text-shadow: 1px 1px 1.7px rgb(255, 149, 149);
+  position: relative;
+  top: 30px;
+  text-align: center;
+  left: 20px;
+  font-weight: bold;
   font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+ 
 }
 }
