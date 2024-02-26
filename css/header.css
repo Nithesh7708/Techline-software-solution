@@ -93,7 +93,7 @@ i{
   position: absolute;
   top:6em;
   left: 7.2em;
-  width: 50ch;
+  width: 47ch;
   white-space: nowrap;
   overflow: hidden;
   border-right:3px solid;
@@ -255,8 +255,10 @@ i{
   .container_menu ul li{
     display: none;
   }
-  .container_menu ul li{
-    display: none;
+  .android_menu{
+    display: block;
+    position: absolute;
+    background-color:blue;
   }
   .menu_rupees{
     top: 13px;
@@ -286,8 +288,8 @@ i{
     color: var(--white-color);
     position: absolute;
     left: 330px;
-    top: 10px;
-    font-size: 25px;
+    top: 5px;
+    font-size: 35px;
   }
   .menu_heart_android{
     color: var(--white-color);
@@ -305,16 +307,18 @@ i{
     top: 7.5px;
   }
   /* menu open close silder */
-  .menu-box{
-    display:none;
-    position: absolute;
-    margin-left: 180px;
-    left:0;
+  .menu-box {
+    display: none;
+    position: fixed; /* Use fixed positioning */
+    top: 0; /* Position at the top of the viewport */
+    left: 0;
     background: #000000;
-    width:180px;
-    height: 390px;
-    animation: menu_slider_open 0.5s;
-    z-index: 12;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; /* Use viewport height */
+    z-index: 1000; /* Ensure the menu appears above other elements */
+    /* Add other styling as needed */
   }
   @keyframes menu_slider_open {
     from{
@@ -328,33 +332,67 @@ i{
     color:var(--white-color);
   }
   .menu-box ul li{
-    position: relative;
-    top: 13px;
-    left: 3em;
+  box-shadow: 1px -3px 1px rgb(255, 198, 198);
+  text-shadow: 1px 2px 6px black;
+  position: relative;
+  background-color:var(--primary-color);
+   width: 80%;
+   height: 70px;
+   margin-left:30px;
+   margin-top: 8px;
+   top: 6.6em;
+   left: 0;
+   border-radius: 10px;
+   justify-content: center;
+   display: flex;
+   align-items:center;
     list-style: none;
     font-size: 16px;
     font-weight: var(--fw6);
     line-height: 45px;
   }
   .profile_box img{
+    box-sizing: border-box;
+    box-shadow: 1px 2px 20px red;
     position: relative;
-    left:4em;
-    top: 10px;
+    left:-1px;
+    margin-top: -4px;
     border: 3px solid white;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
   } 
+  .profile_bg_color{
+    position:absolute;
+    top:45px;
+    display: flex;
+    left: 8.5em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: var(--primary-color);
+  }
   .menu-box h1{
+box-shadow: 1px 2px 10px red;
+text-shadow: 1px 2px 3px black;
+border-radius: 10px;
 position: relative;
-left: 4em;
-top: 15px;
+left: 5.5em;
+align-items: center;
+display: flex;
+justify-content: center;
+min-width: 150px;
+height: 20px;
+padding:15px;
+background-color: var(--primary-color);
+width: 100px;
+top: 8em;
 color: var(--white-color);
 text-transform: capitalize;
-font-size: 15px;
+font-size: 20px;
   }
   .menu-box .profile_box{
-    background-color: #5f5f5f;
+    background-color:black;
     height: 100px;
     
   }
@@ -369,7 +407,7 @@ font-size: 15px;
     left: 4.5em;
     top:10;
     font-size: 10px;
-    width: 51ch;
+    width: 47.5ch;
   }
   .stall_name img{
     width: 100%;
@@ -502,3 +540,12 @@ font-weight: bold;
  
 }
 }
+@media only screen and (max-width: 480px) {
+  /* CSS rules for smaller mobile devices */
+  .container {
+    width: 100%;
+    padding: 0 10px; /* Adjust as needed */
+  }
+  /* Add more specific rules as needed */
+}
+
