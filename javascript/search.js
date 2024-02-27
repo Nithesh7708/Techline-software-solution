@@ -46,7 +46,7 @@ function renderResults(results) {
     a.href = result.link;
     a.textContent = result.name;
     li.appendChild(a);
-    resultsElement.appendChild(li,hr);
+    resultsElement.appendChild(li);
   }
 
   const pageCount = Math.ceil(results.length / itemsPerPage);
