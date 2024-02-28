@@ -306,7 +306,7 @@ i{
   font-size: 20px;
   margin-left: 0;
   background-color:transparent;
-  text-align: center;
+  left: 24.1em;
   z-index: 10;
   position: relative;
   margin-bottom: 10px;
@@ -580,6 +580,7 @@ font-weight: bold;
 }
 .results{
   position: relative;
+  left: 0;
   top: 50px;
   background-color:#ffffff;
   color: white;
@@ -587,9 +588,9 @@ font-weight: bold;
   padding: 0;
 }
 .result-item{
-  margin-left: -100px;
+margin-left: -41px;
+  left: 65px;
   background-color:transparent;
-  text-align: center;
   z-index: 10;
   position: relative;
   margin-bottom: 10px;
@@ -606,7 +607,12 @@ font-weight: bold;
   cursor: pointer;
   color: rgb(255, 255, 255);
 }
+#searchInput{
+  position: relative;
+  left: 1em;
+  width: 23em;
 
+}
 .searbar input{
   position: relative;
   border-radius: 10px;
@@ -637,7 +643,7 @@ font-weight: bold;
   color: #616161;
   position: relative;
   left:43px;
-  top: 13px;
+  top: 22px;
 }
 /* food catogary */
  .catogary-top{
@@ -667,6 +673,10 @@ font-weight: bold;
   border-radius: 70%;
   margin-left: 50px;
 }
+.food_catogary .catogary_img p{
+display:none;
+}
+
 .catogary_img{
   margin-top: -40px;
   opacity: 1;
@@ -682,11 +692,12 @@ font-weight: bold;
   color:rgb(255, 0, 106);
 }
 .catogary_img h2{
+  display: block;
   text-shadow: 1px 1px 1.7px rgb(255, 149, 149);
   position: relative;
-  top: 30px;
+  top: 0px;
   text-align: center;
-  left: 20px;
+  left: 55px;
   font-weight: bold;
   font-size: 20px;
  
