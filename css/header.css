@@ -355,8 +355,121 @@ i{
   top: 20px;
   width: 30em;
 }
+/* promo food multi section */
+.promo{
+  position: relative;
+  top: 102em;
+  background-color: #c0c0c0;
+}
+.section_promo1{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #e42e00;
+}
+.section_promo1 img{
+  position: relative;
+  left:0;
+  height: 250px;
+}
+.section_promo1 h1{
+  color: white;
+  font-size: 80px;
+  position: absolute;
+  left:5.5em;
+  margin-top: -2em;
+}
+.section_promo1 p{
+  color:  rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bold;
+  width:600px;
+  position: relative;
+  top: 2em;
+  left: 1em;
+}
 
-
+.section_promo2{
+  margin-top:40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #fffb00;
+}
+.section_promo3{
+  margin-top:40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #3acc00;
+}
+.section_promo4{
+  margin-top:40px;
+  position:relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color:#00c2e4;
+}
+.section_promo5{
+  margin-top:40px;
+  position:relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #ff008c;
+}
+.section_promo6{
+  margin-top:40px;
+  position:relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #0048e4;
+}
+.section_promo7{
+  margin-top:40px;
+  position:relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #ff00d4;
+}
+.section_promo8{
+  margin-top:40px;
+  position:relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #047700;
+}
+.section_promo9{
+  margin-top:40px;
+  position:relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #ff004c;
+}
+.section_promo10{
+  margin-top:40px;
+  position:relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #a200ff;
+}
 
 /* moblie size assign */
 @media only screen  and (max-width:992px) {
