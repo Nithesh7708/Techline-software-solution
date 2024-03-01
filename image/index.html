@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<head>
+    <div class="slider">
+        <div class="slides">
+                   <input type="radio" id="radio1" name="radios">
+                   <input type="radio" id="radio2" name="radios">
+                   <input type="radio" id="radio3" name="radios">
+
+                  <div class="slide first">
+                   <img src="1.jpg">
+                  </div>
+                  <div class="slide ">
+                    <img src="2.jpg">
+                  </div>
+                  <div class="slide ">
+                    <img src="3.jpg">
+                  </div>
+        
+
+        
+        <div class="auto">
+        <div class="auto1"></div>
+        <div class="auto2"></div>
+        <div class="auto3"></div>
+        </div>
+    </div>
+<div class="manual">
+    <label for="radio1" class="manuals"></label>
+    <label for="radio2" class="manuals"></label>
+     <label for="radio3" class="manuals"></label>
+</div>
+
+    </div>
+    <script>
+        var counter=1;
+        setInterval(function(){ 
+            document.getElementById('radio'+counter).checked=true;
+            counter=counter+1;
+            if(counter>3){
+                counter=1;
+
+            }
+        },4000)
+    </script>
+</head>
+</html>

@@ -26,11 +26,17 @@
   --trans-color:color .3s;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
 }
 a{
   text-decoration: none;
@@ -39,9 +45,9 @@ a{
   display: flex;
   align-items: center;
   background-color: #4BA96A;
-  width:var(--percent100);
+  width:100vw;
   height: 80px;
-  z-index: 1;
+  z-index: 9999;
 }
 .container_menu a {
 color:var(--white-color);
@@ -117,11 +123,11 @@ i{
   top:0;
   margin-top:-150px;
   height: 600px;
-  width: 100%;
+  width: 100vw;
   z-index:-1;
 }
 #banner_bg_black{
-  width: 100%;
+  width: 100vw;
   height: 400px;
   background-color: #000000;
   position:absolute;
@@ -170,7 +176,7 @@ i{
   top: 0;
   margin: 0;
   background-color: #1dac00b6;
-  width: 100%;
+  width: 100vw;
   height: 4em;
 }
 .searbar input{
@@ -229,15 +235,15 @@ i{
 }  
 /* food catogary's */
 .catogary-top{
-  position: absolute;
-  top:11em;
+  position: relative;
+  top:10vh;
   font-size: 50px;
-  left: 60px;
+  left: 120px;
 }
 .food_catogary{
   margin-top: 4em;  
-  width: 100%;
-  height: 200px;
+  width:  100vw;
+  height: auto;
 }
 
 .catogary_img img{
@@ -311,7 +317,7 @@ i{
   position: relative;
   margin-bottom: 10px;
   top: 0px;
-  width: 100%;
+  width: 100vw;
   text-decoration: underline rgb(196, 196, 196) 1px;
   padding: 10px;
 }
@@ -358,13 +364,14 @@ i{
 /* promo food multi section */
 .promo{
   position: relative;
-  top: 102em;
+  top: 8em;
   background-color: #c0c0c0;
 }
 .section_promo1{
+  overflow: hidden;
   display: flex;
   align-items: center;
-  width: 100%;
+  width:auto;
   height: 500px;
   background-color: #e42e00;
 }
@@ -394,11 +401,46 @@ i{
   margin-top:40px;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 500px;
-  background-color: #fffb00;
+  background-color: #00a2ff;
+}
+.section_promo2 img {
+  filter: drop-shadow(1px 1px 5px rgb(126, 126, 126));
+  height: 450px;
+  transform: rotate(30deg);
+  position: relative;
+  left:4em;
+  right: 0;
+}
+#section_2_second_img{
+  position: absolute;
+  left: 58em;
+  top: 1em;
+  transform: rotate(-20deg);
+  filter: drop-shadow(1px 1px 10px rgb(136, 136, 136));
+}
+.section_promo2 h1{
+  width: 600px;
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  left: 4.6em;
+  font-size: 70px;
+  
+}
+.section_promo2 p{
+  width: 600px;
+  height: auto;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 1em;
+  left: 2em;
 }
 .section_promo3{
+  overflow:hidden ;
   margin-top:40px;
   position: relative;
   display: flex;
@@ -407,21 +449,107 @@ i{
   height: 500px;
   background-color: #3acc00;
 }
+.section_promo3 img{
+  height: 300px;
+  position: relative;
+  top: 6.3em;
+}
+.section_promo3 #chips_animation{
+  animation: chips_animation 20s infinite;
+  position: absolute;
+  top: 0;
+  height: 400px;
+}
+#section3_chips_2{
+  position: relative;
+  float: right;
+  height: 200px;
+  top: 9.3em;
+}
+.section_promo3 h1{
+  color: white;
+  width:800px;
+  position: absolute;
+  left: 5em;
+  top: 1.5em;
+  font-size: 60px;
+}
+.section_promo3 p{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  top: 3em;
+}
+@keyframes chips_animation {
+  10%{
+    height: 400px;
+    margin-top: -220px;
+    top: 0em;
+    margin-left: -40px;
+  }
+90%{
+  transform: rotate(20deg);
+  margin-top: 0px;
+  top: 5em;
+}
+}
 .section_promo4{
+  overflow: hidden;
   margin-top:40px;
   position:relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 500px;
   background-color:#00c2e4;
+}
+.section_promo4 .sec_3_1{
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 0em;
+  top: 1em;
+}
+.section_promo4 .sec_3_2{
+  position: absolute;
+  width: 900px;
+  z-index: -1;
+  top: -13em;
+animation:snacks_animation 14s infinite;
+}
+.section_promo4 h1{
+  color: white;
+  position: relative;
+  top: -2.5em;
+  left: 5em;
+  width: 90vw;
+  font-size: 60px;
+}
+.section_promo4 p{
+  font-size: 30px;
+  width: 40vw;
+  font-weight: bold;
+  color: white;
+  left: 22em;
+  top: 6em;
+  position: absolute;
+}
+@keyframes snacks_animation {
+  10%{
+    margin-top: -39em;
+    top: 0em;
+  }
+  90%{
+    top: 30em;
+  }
 }
 .section_promo5{
   margin-top:40px;
   position:relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 500px;
   background-color: #ff008c;
 }
@@ -430,7 +558,7 @@ i{
   position:relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 500px;
   background-color: #0048e4;
 }
@@ -439,7 +567,7 @@ i{
   position:relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 500px;
   background-color: #ff00d4;
 }
@@ -448,7 +576,7 @@ i{
   position:relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 500px;
   background-color: #047700;
 }
@@ -457,7 +585,7 @@ i{
   position:relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 500px;
   background-color: #ff004c;
 }
@@ -466,20 +594,27 @@ i{
   position:relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 500px;
   background-color: #a200ff;
 }
+/* slider page */
+
+
+
 
 /* moblie size assign */
 @media only screen  and (max-width:992px) {
-
+.body{
+  overflow-x: hidden;
+}
   .container_menu{
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     background-color: #4BA96A;
-    width:var(--percent100);
-    height: 50px;
+    width:100vw;
+    height: 10vh;
     box-sizing: border-box;
   }
   .container_menu ul li{
@@ -491,7 +626,7 @@ i{
     background-color:blue;
   }
   .menu_rupees{
-    top: 13px;
+    top: 4vh;
     position: absolute;
     left: 180px;
     font-weight: var(--fw6); 
@@ -499,7 +634,7 @@ i{
     color:var(--white-color);
   }
   .menu_buy{
-    top: 13px;
+    top: 4vh;
     margin-left: 30px;
     font-size: 20px;
     position: absolute;
@@ -516,16 +651,15 @@ i{
   }
   .android_menu_end{
     color: var(--white-color);
-    position: absolute;
-    left: 330px;
-    top: 5px;
+    float: right;
+    margin-top: 3vh;
     font-size: 35px;
   }
   .menu_heart_android{
     color: var(--white-color);
     position: absolute;
     left: 290px;
-    top: 5px;
+    top: 1.9vh;
     font-size: 20px;
   }
   .add-to-cart-total{
@@ -534,7 +668,7 @@ i{
     position: absolute;
     font-size: 11.5px;
     left: 286px;
-    top: 7.5px;
+    top:2.4vh;
   }
   /* menu open close silder */
   .menu-box {
@@ -653,14 +787,19 @@ font-size: 20px;
     width: 100%;
     height: 15em;
   }
+  html{
+    overflow-x: hidden;
+  }
 /* button menu */
+
 .buttom_menu{
   display: block;
   position: fixed;
-  top: 40.5em;
   background:#4BA96A;
-  width: 100%;
-  height:80px;
+  width: 100vw;
+  height:10vh;
+  z-index: 9;
+  bottom:0;
 }
 .buttom_menu ul a{
   color: white;
@@ -760,8 +899,8 @@ margin-left: -41px;
 }
 /* food catogary */
  .catogary-top{
-  position:absolute;
-  top:160px;
+  position:relative;
+  top:5vh;
   font-size: 30px;
   left: 20px;
 }
@@ -769,7 +908,7 @@ margin-left: -41px;
   position: relative;
   right: 60px;
   width: 117%;
-  height: 160px;
+  height: 200px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
@@ -815,6 +954,217 @@ display:none;
   font-size: 20px;
  
 }
+/* promotion bekary item */
+.promo{
+  position: relative;
+  top: 1em;
+  background-color: #c0c0c0;
+  z-index: -1;
+}
+.section_promo1{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width:auto;
+  height: 300px;
+  background-color: #e42e00;
+}
+.section_promo1 img{
+  position: relative;
+  left:3em;
+  top: -1.6em;
+  height: 150px;
+}
+.section_promo1 h1{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left:2em;
+  top: 3em;
+  margin-top: -2em;
+}
+.section_promo1 p{
+  color:  rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  width:300px;
+  position: absolute;
+  top: 13em;
+  left: 1.5em;
+}
+
+.section_promo2{
+  overflow: hidden;
+  margin-top:40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #00a2ff;
+}
+.section_promo2 img {
+  display: none;
+  filter: drop-shadow(1px 1px 5px rgb(126, 126, 126));
+  height: 250px;
+  transform: rotate(30deg);
+  position: relative;
+  left:0em;
+  right: 0;
+}
+#section_2_second_img{
+  display: block;
+  position: relative;
+  left: 4em;
+  top: -2em;
+  height: 250px;
+  transform: rotate(0deg);
+  filter: drop-shadow(1px 1px 10px rgb(136, 136, 136));
+}
+.section_promo2 h1{
+  width:350px;
+  color: white;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 30px;
+  
+}
+.section_promo2 p{
+  width: 96vw;
+  height: auto;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 17em;
+}
+.section_promo3{
+  overflow:hidden ;
+  margin-top:40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #3acc00;
+}
+.section_promo3 img{
+  height: 180px;
+  position: relative;
+  top: 10em;
+}
+.section_promo3 #chips_animation{
+  animation: chips_animation 20s infinite;
+  position: absolute;
+  top: 0;
+  height: 300px;
+  opacity: 0.9;
+  z-index: -1;
+}
+#section3_chips_2{
+  opacity: 0.6;
+  position: absolute;
+  height: 200px;
+  z-index:-1;
+  margin-top:12em;
+}
+.section_promo3 h1{
+  color: white;
+  width:100vw;
+  position: absolute;
+  left: 0.5em;
+  top: 1em;
+  font-size: 34px;
+}
+.section_promo3 p{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 8.5em;
+  left: 1em;
+  margin-right: 1em;
+}
+.section_promo4{
+  overflow: hidden;
+}
+.section_promo4 h1{
+  font-size: 30px;
+  display: flex;
+  position: absolute;
+  top: 5vh;
+  left:7vw;
+}
+.section_promo4 .sec_3_2{
+  width: 500px;
+  position: absolute;
+  left: 0;
+  opacity: 0.9;
+}
+.section_promo4 p{
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+  position: relative;
+  top: 18vh;
+  left: 5vw;
+  width: 400px;
+  height: auto;
+}
+.section_promo4 .sec_3_1{
+  float: left;
+  display: flex;
+  top: 6vh;
+  align-items: center;
+  width: 240px;
+  height: 320px;
+}
+.section_promo5{
+  background-color: white;
+  overflow: hidden;
+}
+.section_promo5 img{
+  position: absolute;
+  top: 31vh;
+  left: 40vw;
+  width: 60vw;
+  height: 30vh;
+}
+.section_promo5 h1{
+  width: 300px;
+  position: absolute;
+  top:3vh;
+  left: 5vw;
+}
+.section_promo5 p{
+line-height: 25px;
+font-weight: bold;
+  width: 300px;
+  font-size: 14px;
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+}
+.section_promo6{
+  overflow: hidden;
+}
+.section_promo7{
+  overflow: hidden;
+}
+.section_promo8{
+  overflow: hidden;
+}
+.section_promo9{
+  overflow: hidden;
+}
+.section_promo10{
+  overflow: hidden;
+}
+.section_promo4{
+  overflow: hidden;
+}
+/* slider android style */
+
+
 }
 @media only screen and (max-width: 480px) {
   /* CSS rules for smaller mobile devices */
