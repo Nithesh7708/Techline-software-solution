@@ -152,6 +152,56 @@ body {
   left: 150px; 
   position: absolute;
 }
+/* icon page */
+#password_icon{
+  font-size: 23px;
+  position: relative;
+  top: 5px;
+  left: -45px;
+  color: #7c7c7c;
+}
+#confim_icon{
+  font-size: 23px;
+  position: relative;
+  top: 5px;
+  left: -45px;
+  color: #7c7c7c;
+}
+#otp_icon{
+  font-size: 23px;
+  position: relative;
+  top:3px;
+  left: -40px;
+  color: #7c7c7c;
+}
+#captcha_icon{
+  font-size: 23px;
+  position: relative;
+  top:3px;
+  left: -45px;
+  color: #7c7c7c;
+}
+#moblie_icon{
+  font-size: 23px;
+  position: relative;
+  top:3px;
+  left: -40px;
+  color: #7c7c7c;
+}
+#first_name_icon{
+  font-size: 23px;
+  position: absolute;
+  top:285px;
+  left: 190px;
+  color: #7c7c7c;
+}
+#last_name_icon{
+  font-size: 23px;
+  position: absolute;
+  top:285px;
+  left: 410px;
+  color: #7c7c7c;
+}
   @media only screen  and (max-width:992px) {
     .sign_container {
 
@@ -254,4 +304,53 @@ body {
        text-align: center;
        font-size: 18px;
     }
+  #password_icon{
+    font-size: 23px;
+    position: relative;
+    top: -40px;
+    left: 255px;
+    color: #7c7c7c;
+  }
+  #confim_icon{
+    font-size: 23px;
+    position: relative;
+    top: -40px;
+    left: 255px;
+    color: #7c7c7c;
+  }
+  #otp_icon{
+    font-size: 23px;
+    position: relative;
+    top:3px;
+    left: -40px;
+    color: #7c7c7c;
+  }
+  #captcha_icon{
+    font-size: 23px;
+    position: relative;
+    top:3px;
+    left: -45px;
+    color: #7c7c7c;
+  }
+  #moblie_icon{
+    font-size: 23px;
+    position: relative;
+    top:3px;
+    left: -40px;
+    color: #7c7c7c;
+  }
+  #first_name_icon{
+    font-size: 23px;
+    position: absolute;
+    top:260px;
+    left: 270px;
+    color: #7c7c7c;
+  }
+  #last_name_icon{
+    font-size: 23px;
+    position: absolute;
+    top:305px;
+    left: 270px;
+    color: #7c7c7c;
+  }
   }
