@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #swich_page{
+    position: relative;
+     top:0px; 
+     left: -45px;
+     text-align: center;
+     font-size: 18px;
+  }
+  .sign_container {
+
+  position: relative;
+  top: 9em;
+  left: 25em;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    line-height: 60px;
+    text-align: center;
+  }
+  
+  .form-group {
+    
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  button {
+    width: calc(33.33% - 10px);
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  
+  input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 60%;
+    position: relative;
+    left: 4vw;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #captcha {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  #reloadCaptcha {
+    background-color:transparent;
+    color: rgb(37, 66, 230);
+    border: none;
+    position: relative;
+    top: 71vh;
+    left: 19vw;
+    font-size: 30px;
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  
+  #sendOTP{
+    position: absolute;
+    top:52.4vh;
+    left: 20em;
+    width: 100px;
+  }
+  #mobileNumber{
+    width: 18vw;
+  }
+  #firstName{
+    width: 16vw;
+  }
+  #lastName{
+    width: 16vw;
+  }
+  #reloadCaptcha{
+    position: absolute;
+    width: 120px;
+  }
+  #password{
+    width: 350px;
+  }
+#confirmPassword{
+    width: 350px;
+  }
+ /* profile upload page */
+ #photo{
+  position: relative;
+  top: 30px;
+  margin-bottom: 30px;
+  left: 160px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+#file{
+  display: none;
+}
+#uploadbtn{
+  background-color: rgb(30, 30, 204);
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+  position: relative;
+  left: 270px;
+  top: -40px;
+  border: 1px black so;
+  box-shadow: 1px 2px 5px black;
+}
+#uploadbtn i{
+  position: relative;
+  left: 1px;
+}
+#message_profile{
+  color: red; 
+  font-size: 15px; 
+  top: 80px; 
+  left: 150px; 
+  position: absolute;
+}
+  @media only screen  and (max-width:992px) {
+    .sign_container {
+
+      position: relative;
+      top: 8em;
+      left: 1em;
+      width:90vw;
+      height: 80vh;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      }
+      .form-group {
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+      #mobileNumber{
+        width: 40vw;
+      }
+      #firstName{
+        width: 80vw;
+      }
+      #lastName{
+        width: 80vw;
+      }
+      #sendOTP{
+        position: absolute;
+        top:44vh;
+        left: 14em;
+        width: 100px;
+      }
+      #reloadCaptcha{
+        position: absolute;  
+        border-radius: 5px;
+        width: 19vw;
+        left: 68vw;
+        top: 60vh;
+        font-size: 30px;
+      }
+      #password{
+        width: 80vw;
+      }
+    #confirmPassword{
+        width: 80vw;
+      }
+     #otpInput{
+      width: 40vw;
+     }
+     #captchaInput{
+      width: 40vw;
+     }
+      
+  .sign_container {
+    height: 80vh;
+      padding: 20px;
+      border:none;
+    }
+    button{
+      position: relative;
+      left: 16vw;
+    }
+
+  /* profile uploader design */
+  #photo{
+    position: relative;
+    top: 10px;
+    left: 80px;
+    border-radius: 50%;
+  }
+  #file{
+    display: none;
+  }
+  #uploadbtn{
+    width: 40px;
+    height: 40px;
+    left: 160px;
+    top: -40px;
+    border: 1px black so;
+    box-shadow: 1px 2px 5px black;
+  }
+  #uploadbtn i{
+    position: relative;
+    left: 1px;
+    }
+    .user_profile{
+      margin-bottom: -40px;
+    }
+    #message_profile{
+      color: red; 
+      font-size: 10px; 
+      top: 70px; 
+      left: 100px; 
+      position: absolute;
+    }
+    /* swiching user page */
+    #swich_page{
+      position: relative;
+       top:0px; 
+       left:7px;
+       text-align: center;
+       font-size: 18px;
+    }
+  }

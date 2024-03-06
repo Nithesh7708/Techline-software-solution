@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="javascript/android_menu.js"></script>
+    <script src="javascript/search.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+  <!-- signup section -->
+  <div class="sign_container">
+    <h1>Create account</h1>
+    <form id="signup-form" method="post" >
+      <div class="user_profile">
+        <p id="message_profile" >Please upload 500px X 500px</p>
+        <img src="image/profile/profile-icon.png" alt="" id="photo">
+          <input type="file"  id="file">
+          <label for="file" id="uploadbtn"><i class="fa-solid fa-camera"></i></label>
+        </div>
+      <div class="form-group">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+        <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number">
+      </div>
+      <div class="form-group">
+        <button type="button" id="sendOTP" onclick="otp_cliced()">Send OTP</button>
+      </div>
+      <div class="form-group">
+        <input type="text" id="otpInput" name="otpInput" placeholder="Enter OTP">
+      </div>
+      <div class="form-group">
+        <span id="captcha"></span>
+        <input type="text" id="captchaInput" name="captchaInput" placeholder="Enter Captcha">
+        <i class="fa-solid fa-arrows-rotate" id="reloadCaptcha"></i>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit">SignUp</button>
+      </div>
+      <div id="swich_page"> <p>I already have account <a href="login.html">Login</a></p></div>
+    </form>
+  </div>
+  <script src="javascript/signup.js"></script>
+<!-- menu page -->
+
+    <header style="position: fixed; z-index: 9999; top:0px;">
+        <!-- android page -->
+        <div class="android_menu">
+            <span class="menu_rupees">₹ 999.00</span>
+            <span class="menu_buy"><i class="fa-solid fa-basket-shopping"></i></span>
+            <span class="menu_heart_android"><i class="fa-solid fa-heart"></i></span>
+            <span class="add-to-cart-total">10</span>
+            <span id="menu_bar_top" class="android_menu_end" onclick="menu_open()"><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <!-- android page end -->
+        <div class="container_menu">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>HOME</a></li>
+                <li><a href="#"><i class="fa-solid fa-hand-holding-heart"></i></i>OFFER'S</a></li>
+                <li><a href="#"><i class="fa-solid fa-id-badge"></i>CONTACT US </a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i>ABOUT US</a></li>
+                <li><a href="search.html"><i id="top_food_search_icon" class="fa-solid fa-magnifying-glass"></i> <input id="search_food" type="text" placeholder="search bekary food's..."></a></li>
+                <span>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>My Cart <i id="heart" class="fa-solid fa-heart"></i></a><div class="add_value">10</div></li>
+                <li><a href="#"><i class="fa-solid fa-money-check-dollar"></i>Check Out</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Sign in</a></li>
+              </span>
+             </ul>
+        </div>
+        <!-- android closemopn menu slider bar -->
+        <div class="menu-box" id="menu_bar_android">
+           <div> <span id="menu_bar_top_close" class="android_menu_end" onclick="menu_close()"  style="display: none;"><i class="fa-solid fa-circle-xmark"></i></span></div>
+            <div class="profile_box">
+
+                <span class="profile_bg_color"><img class="menu_buttom_banner" src="image/profile/mottu_profile.jpg" height="100px" alt="profie"></span>
+                <h1>nithesh</h1>
+            </div>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>HOME</a></li>
+                <li><a href="#"><i class="fa-solid fa-hand-holding-heart"></i>OFFER'S</a></li>
+                <li><a href="#"><i class="fa-solid fa-id-badge"></i>CONTACT US</a></li>
+                <li><a href="#"><i class="fa-solid fa-store"></i>ORDER</a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i>ABOUT US</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>LOGIN</a></li>
+            </ul>
+        </div>
+    </header>
+
+        <!-- this section button menu like home, profile,etc -->
+    <section class="body_buttom">
+        <div class="buttom_menu">
+            <ul>
+                <li><a href="index.html"><div class="buttom_menu_icon"><i class="fa-solid fa-house-chimney"></i></div><span>Home</span></a></li>
+                <li><a href="search.html"><div class="buttom_menu_icon"><i class="fa-solid fa-magnifying-glass"></i></div><span>Search</span></a></li>
+                <li><a href="#"><div class="buttom_menu_icon"><i class="fa-solid fa-hand-holding-heart"></i></div><span>Offer's</span></a></li>
+                <li><a href="#"><div class="buttom_menu_icon"><i class="fa-solid fa-user"></i></div><span>Account</span></a></li>
+            </ul>
+        </div>
+    </section>
+  
+    <script src="javascript/signup_profile.js"></script>
+    
+</body>
+</html>
