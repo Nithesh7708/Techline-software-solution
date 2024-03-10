@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
   }
+  a{
+    color: rgb(0, 0, 177);
+  }
   #swich_page{
     position: relative;
      top:-80px; 
@@ -64,6 +67,13 @@ body {
   p{
     position: relative;
     top: 70px;
+  }
+  #password_icon{
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    float: right;
+    cursor: pointer;
   }
 
   @media only screen  and (max-width:992px) {

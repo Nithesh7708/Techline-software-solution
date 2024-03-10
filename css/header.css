@@ -26,6 +26,7 @@
   --trans-color:color .3s;
 
 }
+
 html{
   scroll-behavior: smooth;
 }
@@ -50,12 +51,15 @@ a{
   z-index: 9999;
 }
 .container_menu a {
+
 color:var(--white-color);
 }
 .container_menu ul li{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
   z-index: 1;
   position: relative;
-  left: 150px;
+  left: 120px;
   padding: 15px;
   display: inline;
   font-weight: var(--fw7);
@@ -235,9 +239,13 @@ i{
 }  
 /* food catogary's */
 .catogary-top{
+  font-family: "Shrikhand", serif;
+  font-weight: 100;
+  font-style: normal;
+  color: black;
   position: relative;
-  top:18vh;
-  font-size: 50px;
+  top:17vh;
+  font-size: 40px;
   left: 120px;
 }
 .food_catogary{
@@ -251,6 +259,8 @@ i{
   position: relative;
   top: 60px;
   left: 0;
+  transition: all 0.5s;
+  opacity: 0.5;
   width: 200px;
   height: 200px;
   border-radius: 70%;
@@ -258,8 +268,6 @@ i{
 }
 .catogary_img{ 
   max-width: 100%;
-  transition: all 0.4s;
-  opacity: 0.6;
   position: relative;
   left: 40px;
   line-height: 100px;
@@ -267,6 +275,8 @@ i{
   padding-left: 40px;
 }
 .catogary_img p{
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
   position: relative;
   left: 50px;
   font-weight: bold;
@@ -281,11 +291,16 @@ i{
 .catogary_img a{
   color:rgb(255, 0, 106);
 }
-.catogary_img:hover{
+.catogary_img a:hover{
+  text-decoration: none;
+}
+.catogary_img img:hover{
+
   transform: scale(1.1);
   opacity: 1;
 }
 .catogary_img h2{
+  font-family: "Amaranth", sans-serif;
   text-shadow: 1px 1px 1.7px rgb(255, 149, 149);
   position: relative;
   top: 20px;
@@ -383,6 +398,9 @@ i{
   height: 250px;
 }
 .section_promo1 h1{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
   filter: drop-shadow(3px 1px 1px black);
   color: white;
   font-size: 80px;
@@ -391,6 +409,9 @@ i{
   margin-top: -2em;
 }
 .section_promo1 p{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color:  rgb(255, 255, 255);
   font-size: 30px;
   font-weight: bold;
@@ -424,6 +445,9 @@ i{
   filter: drop-shadow(1px 1px 10px rgb(136, 136, 136));
 }
 .section_promo2 h1{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
   filter: drop-shadow(3px 1px 1px black);
   width: 600px;
   color: white;
@@ -434,6 +458,9 @@ i{
   
 }
 .section_promo2 p{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   width: 600px;
   height: auto;
   font-size: 30px;
@@ -473,6 +500,9 @@ i{
   top: 9.3em;
 }
 .section_promo3 h1{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
   filter: drop-shadow(3px 1px 1px black);
   color: white;
   width:800px;
@@ -482,6 +512,9 @@ i{
   font-size: 60px;
 }
 .section_promo3 p{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: white;
   font-size: 25px;
   font-weight: bold;
@@ -528,6 +561,9 @@ i{
 animation:snacks_animation 14s infinite;
 }
 .section_promo4 h1{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
   filter: drop-shadow(3px 1px 1px black);
   color: white;
   position: relative;
@@ -537,6 +573,9 @@ animation:snacks_animation 14s infinite;
   font-size: 60px;
 }
 .section_promo4 p{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 30px;
   width: 40vw;
   font-weight: bold;
@@ -564,6 +603,10 @@ animation:snacks_animation 14s infinite;
   background-color: #ffffff;
 }
 .section_promo5 h1{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
   width: 70vw;
   position: absolute;
   top: 10vh;
@@ -571,6 +614,9 @@ animation:snacks_animation 14s infinite;
   left: 10vw;
 }
 .section_promo5 p{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   position: absolute;
   top: 35vh;
   width: 60vw;
@@ -601,6 +647,9 @@ animation:snacks_animation 14s infinite;
   width: 40vw;
 }
 .section_promo6 h1{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
   color: white;
   position: absolute;
   top: 10%;
@@ -609,6 +658,9 @@ animation:snacks_animation 14s infinite;
 }
 
 .section_promo6 p{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: white;
   position: absolute;
   top: 30%;
@@ -628,6 +680,9 @@ animation:snacks_animation 14s infinite;
   background-color: #ff00d4;
 }
 .section_promo7 h1{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
   color: white;
   position: absolute;
   top: 10%;
@@ -636,6 +691,9 @@ animation:snacks_animation 14s infinite;
 }
 
 .section_promo7 p{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: white;
   position: absolute;
   top: 30%;
@@ -667,6 +725,9 @@ animation:snacks_animation 14s infinite;
   top: 80px;
 }
 .section_promo8 p{
+   font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   position: absolute;
   width: 700px;
   color: white;
@@ -676,6 +737,9 @@ animation:snacks_animation 14s infinite;
   top: 8em;
 }
 .section_promo8 h1{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
   position: absolute;
   color: white;
   top: 110px;
@@ -686,13 +750,189 @@ animation:snacks_animation 14s infinite;
 /* flooter page */
 
 .flooter_body{
+  font-family: "Akaya Telivigala", system-ui;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 25vh;
   width: 100vw;
   height: 400px;
   background-color: #4e4e4e;
 }
+.quick_link{
+  position: relative;
+  left: 250px;
+  top: 91px;
+  margin-top: 50px;
+  height: 30vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 35px;
+}
+.copyright{
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quick_link li{
+  list-style: none;
+}
+.quick_link a,h1{
+  color: white;
+}
+.socialmedia_link{
+  position: relative;
+  top: -15vh;
+  left: -1vw;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content:center;
+  justify-content: center;
+  height: 30vh;
+  width: 30vw;
+}
+.store_info{
+  background-color: #797979;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+}
+li{
+  list-style: none;
+}
+.socialmedia_link2{
+  position: relative;
+  top: -45vh;
+  left: 40vw;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content:center;
+  justify-content: center;
+  height: 30vh;
+  width: 30vw;
+}
+footer i{
+  color: rgb(255, 255, 255);
+}
+.socialmedia_link3{
+  position: relative;
+  top: -75vh;
+  left: 60vw;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content:center;
+  justify-content: center;
+  height: 30vh;
+  width: 30vw;
+}
+a:hover{
+  text-decoration: underline;
+}
+.socialmedia_link li,a{
+  color: white;
+  list-style: none;
+}
+.socialmedia_link li{
+  position: relative;
+  left: 0px;
+}
+/* profile section page */
+.profile_container{
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  top: 1vh;
+  left: 0vw;
+  height: 100vh;
+  width: 20vw;
+  background-color: rgb(0, 156, 91);
+}
+.image_update input{
+  display: none;
+}
 
+.image_update img{
+  display: flex;
+  justify-content: center;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  position: relative;
+  left: 60px;
+  top: 1px;
+}
+.image_update p{
+  transition: all 0.5s;
+font-size: 18px;
+font-weight: 300;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: rgb(0, 0, 0);
+border-radius: 5px;
+border: none;
+position: relative;
+top: 50px;
+width: 140px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+left: 50px;
+background-color: rgb(255, 255, 255);
 
+}
+.image_update p:hover{
+  color: white;
+  background-color: #000000;
+}
+hr{
+  position: relative;
+  top: 6px;
+  height: 2.5px;
+  background-color: white;
+  margin-top: 50px;
+  color: white;
+}
+.profile_container ul li:nth-child(5){
+  background-color: red;
+  height: 30px;
+  width:auto;
+  display: flex;
+  position: relative;
+}
+.profile_container ul li{
+transition: all 0.8s;
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: 50px;
+font-size: 18px;
+font-weight: bold;
+padding-top: 10px;
+}
+a:hover{
+  text-decoration: none;
+}
+.profile_option{
+  position: relative;
+  top: 50px;
+}
+.profile_container ul li:hover{
+  border: 0.5px rgb(255, 255, 255) solid;
+  background-color: #000000;
+}
 /* moblie size assign */
 @media only screen  and (max-width:992px) {
 .body{
@@ -891,6 +1131,11 @@ font-size: 20px;
   z-index: 9;
   bottom:0;
 }
+.buttom_menu i{
+  position: relative;
+  left: -35px;
+  padding-left: 20px;
+}
 .buttom_menu ul a{
   color: white;
 }
@@ -905,11 +1150,18 @@ font-size: 20px;
 .buttom_menu ul li{
 font-size: 14px;
 position: relative;
-top:30px;
-left: 10px;
-display: inline;
+top:10px;
+left: 0px;
+display: inline-flex;
 padding: 2ch;
 font-weight: bold;
+}
+.buttom_menu ul{
+  gap: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .buttom_menu span{
   position: relative;
@@ -1318,8 +1570,184 @@ left: 40px;
 .section_promo4{
   overflow: hidden;
 }
-/* slider android style */
+/* foolder page */
+.flooter_body{
+  margin-top: -2vh;
+  width: 100vw;
+  height:100vh;
+  background-color: #4e4e4e;
+}
+.quick_link{
+  position: relative;
+  left: 0px;
+  top: 40px;
+  font-size: 15px;
+  margin-top: 50px;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 35px;
+}
 
+.copyright{
+  margin: 0;
+  left: 0;
+  top: -40px;
+  font-size: 14px;
+  flex-direction: column;
+  position: relative;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.quick_link li{
+  list-style: none;
+}
+.quick_link a,h1{
+  color: white;
+}
+.socialmedia_link{
+  position: relative;
+  top: 2vh;
+  left: 0vw;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content:center;
+  justify-content: center;
+  height: 30vh;
+  width: auto;
+}
+.store_info{
+  background-color: #797979;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+}
+li{
+  list-style: none;
+}
+.socialmedia_link2{
+  position: relative;
+  top: 2vh;
+  left: 0vw;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content:center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+.socialmedia_link3{
+  position: relative;
+  top: 2vh;
+  left: 0vw;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content:center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+a:hover{
+  text-decoration: underline;
+}
+.socialmedia_link li,a{
+  color: white;
+  list-style: none;
+}
+.socialmedia_link li{
+  position: relative;
+  left: 0px;
+}
+/* profile section page */
+.profile_container{
+  display: none;
+  position: absolute;
+  top: 10vh;
+  left: 0vw;
+  height: 60vh;
+  width: 60vw;
+  background-color: rgb(0, 156, 91);
+}
+.image_update input{
+  display: none;
+}
+
+.image_update img{
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  position: relative;
+  left: 60px;
+  top: 40px;
+}
+.image_update p{
+  transition: all 0.5s;
+font-size: 14px;
+font-weight: 300;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: rgb(0, 0, 0);
+border-radius: 5px;
+border: none;
+position: relative;
+top: 50px;
+width: 120px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+left: 50px;
+background-color: rgb(255, 255, 255);
+
+}
+.image_update p:hover{
+  color: white;
+  background-color: #000000;
+}
+hr{
+  position: relative;
+  top: 6px;
+  height: 2.5px;
+  background-color: white;
+  margin-top: 50px;
+  color: white;
+}
+.profile_container ul li{
+transition: all 0.8s;
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: 40px;
+font-size: 16px;
+font-weight: bold;
+padding-top: 10px;
+}
+a:hover{
+  text-decoration: none;
+}
+.profile_option{
+  position: relative;
+  top: 20px;
+}
+.profile_container ul li:hover{
+  border: 0.5px rgb(255, 255, 255) solid;
+  background-color: #000000;
+}
 
 }
 @media only screen and (max-width: 480px) {

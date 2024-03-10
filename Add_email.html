@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arunachalam bakery shop</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/update_mobile_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="javascript/android_menu.js"></script>
+    <script src="javascript/search.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+</head>
+<!-- update Add email Section -->
+<div class="head_update">
+<h2>Add Email</h2>
+</div>
+<form action="#" method="post">
+    <input type="email" placeholder="Enter the  Email">
+    <input type="number" placeholder="Enter the Mobile Number">
+    <input type="password" placeholder="Enter the  Password ">
+    <input type="submit" value="Update">
+</form>
+<body >
+<!-- menu page -->
+
+    <header style="position: fixed; z-index: 9999; top: 0;">
+        <!-- android page -->
+        <div class="android_menu">
+            <span class="menu_rupees">₹ 999.00</span>
+            <span id="menu_bar_top" class="android_menu_end" onclick="menu_open()"><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <!-- android page end -->
+        <div class="container_menu">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>HOME</a></li>
+                <li><a href="#"><i class="fa-solid fa-hand-holding-heart"></i></i>OFFER'S</a></li>
+                <li><a href="#"><i class="fa-solid fa-id-badge"></i>CONTACT US </a></li>
+                <li  onclick="Profile_menU()"><a href="#"><i class="fa-solid fa-address-card"></i>Profile</a></li>
+                <li><a href="search.html"><i id="top_food_search_icon" class="fa-solid fa-magnifying-glass"></i> <input id="search_food" type="text" placeholder="search bekary food's..."></a></li>
+                <span>
+                <li><a href="#"><i class="fa-solid fa-money-check-dollar"></i>Check Out</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Sign in</a></li>
+              </span>
+             </ul>
+        </div>
+        <!-- android closemopn menu slider bar -->
+        <div class="menu-box" id="menu_bar_android">
+           <div> <span id="menu_bar_top_close" class="android_menu_end" onclick="menu_close()"  style="display: none;"><i class="fa-solid fa-circle-xmark"></i></span></div>
+            <div class="profile_box">
+
+                <span class="profile_bg_color"><img class="menu_buttom_banner" src="image/profile/mottu_profile.jpg" height="100px" alt="profie"></span>
+                <h1>nithesh</h1>
+            </div>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>HOME</a></li>
+                <li><a href="#"><i class="fa-solid fa-hand-holding-heart"></i>OFFER'S</a></li>
+                <li><a href="#"><i class="fa-solid fa-id-badge"></i>CONTACT US</a></li>
+                <li><a href="#"><i class="fa-solid fa-store"></i>ORDER</a></li>   
+                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>LOGIN</a></li>
+            </ul>
+        </div>
+    </header>
+        <!-- this section button menu like home, profile,etc -->
+    <section class="body_buttom">
+        <div class="buttom_menu">
+            <ul>
+                <li><a href="#"><div class="buttom_menu_icon"><i class="fa-solid fa-house-chimney"></i></div><span>Home</span></a></li>
+                <li><a href="search.html"><div class="buttom_menu_icon"><i class="fa-solid fa-magnifying-glass"></i></div><span>Search</span></a></li>
+                <li><a href="#"><div class="buttom_menu_icon"><i class="fa-solid fa-hand-holding-heart"></i></div><span>Offer's</span></a></li>
+                <li onclick="Profile_menU()"><a href="#"><div class="buttom_menu_icon"><i class="fa-solid fa-user"></i></div><span>Profile</span></a></li>
+            </ul>
+        </div>
+    </section>
+  
+<!-- profile view page -->
+<div class="profile_container" id="profile_page">
+   <div class="image_update">
+    <div class="user_profile">
+
+        <img src="image/profile/profile-icon.png" alt="" id="photo">
+          <input type="file"  id="file">
+          <label for="file" id="uploadbtn"><p>Update profile</p></label>
+        </div>
+   </div>
+   <hr>
+   <div class="profile_option">
+    <ul>
+        <li><a href="update_mobile.html">Update Mobile </a></li>
+        <li><a href="Add_email.html">Add Email</a></li>
+        <li><a href="update_Password .html">Change Password</a></li>
+        <li><a href="address.html">Add Address</a></li>
+        <li onclick="profile_close()" ><a href="#">Close</a></li>
+    </ul>
+
+   </div>
+</div>                                                                          
+<footer>
+    <div class="flooter_body">
+
+        <div data-aos="fade-down"  class="quick_link">
+            <h1>Quick Links</h1>
+            <ul>
+                <li><i class="fa-solid fa-house-chimney"></i><a href="#">Home</a></li>
+                <li><i class="fa-solid fa-percent"></i><a href="#">Offer's</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#">Contact Us</a></li>
+                <li><i class="fa-regular fa-address-card"></i><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div   data-aos="zoom-out-down"   class="socialmedia_link">
+            <h1>Social medial</h1>
+            <ul>
+                <li><i class="fa-brands fa-instagram"></i><a href="#">Instagram</a></li>
+                <li><i class="fa-brands fa-facebook"></i><a href="#">Facebook</a></li>
+                <li><i class="fa-solid fa-at"></i><a href="#">E-Mail</a></li>
+                <li><i class="fa-solid fa-headset"></i><a href="#">For Support</a></li>
+            </ul>
+        </div>
+        <div  data-aos="zoom-in-right"  class="socialmedia_link2">
+            <h1>Special Food</h1>
+            <ul>
+                <li><i class="fa-solid fa-cake-candles"></i><a href="#">Cake</a></li>
+                <li><i class="fa-solid fa-cookie-bite"></i><a href="#">Cookie</a></li>
+                <li><i class="fa-solid fa-ice-cream"></i><a href="#">Ice Cream</a></li>
+                <li><i class="fa-solid fa-fire"></i><a href="#">Pops</a></li>
+            </ul>
+        </div>
+        <div  data-aos="zoom-in-left"  class="socialmedia_link3">
+            <h1>Traditional food</h1>
+            <ul>
+                <li><i class="fa-solid fa-pizza-slice"></i><a href="#">Pizza</a></li>
+                <li><i class="fa-solid fa-burger"></i><a href="#">Puffs</a></li>
+                <li><i class="fa-solid fa-stroopwafel"></i><a href="#">Waffle</a></li>
+                <li><i class="fa-solid fa-cookie"></i><a href="#">Desert</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="store_info">
+        <img src="#" alt="logo">
+        <p>enter the small story in our store</p>
+    </div>
+    <div  class="copyright">copyright &#169 2024 Arunachalam bakery. Designed By  <a style="color: rgb(27, 158, 66); font-weight: bold; text-decoration: none;" href="#">&nbsp;&nbsp;Techlyns software solutions.</a></div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- slider script timing -->
+<script src="javascript/signup_profile.js"></script>
+<script src="javascript/profile_previe.js"></script>
+<script>
+    var counter=1;
+    setInterval(function(){ 
+        document.getElementById('radio'+counter).checked=true;
+        counter=counter+1;
+        if(counter>3){
+            counter=1;
+
+        }
+    },4000)
+</script>
+</body>
+</html>

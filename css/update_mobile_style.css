@@ -1,0 +1,103 @@
+.head_update{
+    color: black;
+    position: relative;
+    top: 20vh;
+    left: 0;
+    text-align: center;
+    width: 100vw;
+    height: 3vh;
+}
+form{
+    margin-top: 28vh;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 100vw;
+    height: 60wh;
+}
+form input{
+    border:solid 0.5px rgb(141, 141, 141);
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 30vw;
+    height: 5vh;
+    outline:transparent;
+}
+input[type="number"]{
+    font-size: 14px;
+    padding-left: 30px;
+}
+input[type="email"]{
+    font-size: 14px;
+    padding-left: 30px;
+}
+input[type="password"]{
+    font-size: 14px;
+    padding-left: 30px;
+}
+input:nth-child(4){
+    width: 180px;
+    background-color: rgb(21, 21, 218);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+input:nth-child(4):hover{
+    background-color: rgb(59, 59, 238);
+}
+@media only screen  and (max-width:992px) {
+    .head_update{
+        color: black;
+        position: relative;
+        top: 20vh;
+        left: 0;
+        text-align: center;
+        width: 100vw;
+        height: 3vh;
+    }
+    form{
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        width: 100vw;
+        height: 60wh;
+    }
+    form input{
+        border:solid 0.5px rgb(141, 141, 141);
+        border-radius: 5px;
+        margin-top: 20px;
+        width: 80vw;
+        height: 5vh;
+        outline:transparent;
+    }
+    input[type="number"]{
+        font-size: 14px;
+        padding-left: 30px;
+    }
+    input[type="email"]{
+        font-size: 14px;
+        padding-left: 30px;
+    }
+    input[type="password"]{
+        font-size: 14px;
+        padding-left: 30px;
+    }
+    input:nth-child(4){
+        position: relative;
+        left: 0;
+        width: 180px;
+        background-color: rgb(21, 21, 218);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    input:nth-child(4):hover{
+        background-color: rgb(59, 59, 238);
+    }
+}

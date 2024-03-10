@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
   }
+  a{
+    color: rgb(0, 0, 177);
+  }
   
   #swich_page{
     position: relative;
@@ -154,6 +157,7 @@ body {
 }
 /* icon page */
 #password_icon{
+  cursor: pointer;
   font-size: 23px;
   position: relative;
   top: 5px;
@@ -228,19 +232,20 @@ body {
         width: 80vw;
       }
       #sendOTP{
-        position: absolute;
-        top:44vh;
-        left: 14em;
+        display: inline;
+        position: relative;
+        top:0vh;
+        left: 0em;
         width: 100px;
       }
-      #reloadCaptcha{
-        position: absolute;  
-        border-radius: 5px;
-        width: 19vw;
-        left: 68vw;
-        top: 60vh;
-        font-size: 30px;
-      }
+    #reloadCaptcha{
+    display: inline;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
       #password{
         width: 80vw;
       }
@@ -283,8 +288,10 @@ body {
     box-shadow: 1px 2px 5px black;
   }
   #uploadbtn i{
+    width: auto;
     position: relative;
     left: 1px;
+    float: right;
     }
     .user_profile{
       margin-bottom: -40px;
@@ -308,21 +315,25 @@ body {
     font-size: 23px;
     position: relative;
     top: -40px;
-    left: 255px;
+    left: -30px;
+    float: right;
     color: #7c7c7c;
   }
   #confim_icon{
     font-size: 23px;
     position: relative;
     top: -40px;
-    left: 255px;
+    left: -30px;
+    float: right;
     color: #7c7c7c;
   }
   #otp_icon{
     font-size: 23px;
     position: relative;
-    top:3px;
-    left: -40px;
+    top:5px;
+    width: auto;
+    float: right;
+    left: -170px;
     color: #7c7c7c;
   }
   #captcha_icon{
@@ -341,16 +352,18 @@ body {
   }
   #first_name_icon{
     font-size: 23px;
-    position: absolute;
-    top:260px;
-    left: 270px;
+    position: relative;
+    top:-40px;
+    left:-10px;
+    float: right;
     color: #7c7c7c;
   }
   #last_name_icon{
+    float: right;
     font-size: 23px;
-    position: absolute;
-    top:305px;
-    left: 270px;
+    position:relative;
+    top:-40px;
+    left:-10px;
     color: #7c7c7c;
   }
   }

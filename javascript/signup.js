@@ -54,3 +54,14 @@ function menu_close() {
   document.getElementById("menu_bar_top_close").style.display = "none";
   document.getElementById("menu_bar_top").style.display = "block";
 }
+
+// password and conform password section
+function togglepassword(){
+  let password=document.getElementById('password');
+  if (password.type==='password') {
+    password.type='text';
+  } else {
+    password.type='password';
+  }
+}
+
